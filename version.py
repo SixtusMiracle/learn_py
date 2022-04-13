@@ -1,3 +1,3 @@
-import platform
+m = 53
 
-print('Currently running python version {}'.format(platform.python_version()))
+print(f'Hello World. {m}')
