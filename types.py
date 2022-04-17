@@ -1,3 +1,6 @@
-x = 'miralo "{1:<09}" "{0:>09}"'.upper().format(7, 8)
+a = 8
+b = 9
+
+x = f'seven {a:<09} {b:>09}'
 print(f'x is {x}')
 print(type(x))
