@@ -1,7 +1,7 @@
-from decimal import *
+#  None - NoneType is False
+# numeric 0 is False other numbers are True
+# empty string is '' is False
 
-a = Decimal('.10')
-b = Decimal('.30')
-x = a + a + a - b
+x = 7 > 5 # returns a bool - True
 print(f'x is {x}')
 print(type(x))
