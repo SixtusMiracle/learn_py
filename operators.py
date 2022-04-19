@@ -1,3 +1,8 @@
-hungry = True
-x = 'Eat now!' if hungry else 'Do not eat now'
-print(x)
+x = 5
+y = 3
+# +, -, *, /, // - integer division, %, ** - exponent, unary - and +
+z = x % y
+
+z = -z
+
+print(f'the answer is {z}')
