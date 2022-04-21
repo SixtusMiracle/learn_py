@@ -1,8 +1,8 @@
-x = 0x0a
-y = 0x01
-# & - bitwise AND, | - bitwise OR
-#  ^ - XOR, << - shift left, >> - shift right
-z = x >> y
+x = 65
+y = 89
 
-print(f'(hex) x is {x:02x}, y is {y:02x}, z is {z:02x}')
-print(f'(bin) x is {x:08b}, y is {y:08b}, z is {z:08b}')
+# <, >, <=, >=, ==, !=
+if x != y:
+  print('answer is true')
+else:
+  print('answer is false')
