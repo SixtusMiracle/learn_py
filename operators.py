@@ -1,8 +1,10 @@
-x = 65
-y = 89
+a = True
+b = False
+x = ( 'bear', 'bunny', 'tree', 'sky', 'rain' )
+y = 'bear'
 
-# <, >, <=, >=, ==, !=
-if x != y:
-  print('answer is true')
+# and, or, not, in, not in, is, is not
+if y is not x[1]:
+  print('expression is true')
 else:
-  print('answer is false')
+  print('expression is false')
