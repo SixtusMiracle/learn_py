@@ -1,5 +1,4 @@
-secret = 'swordfish'
-pw = ''
+animals = ( 'bear', 'bunny', 'dog', 'cat', 'bird' )
 
-while pw != secret:
-  pw = input("What's your secret word?")
+for pet in range(5):
+  print(pet)
