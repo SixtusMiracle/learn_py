@@ -1,7 +1,11 @@
-def function(n=53):
-    print(n)
-    return n * 2
+def main():
+    # All functions return a value
+    # if there's no return statement it returns None
+    x = kitten()
+    print(f'{x} is returned')
 
+def kitten():
+    print('Meow!')
+    return 1
 
-x = function(3)
-print(x)
+if __name__ == '__main__': main()
