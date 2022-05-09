@@ -1,20 +1,17 @@
-# game.index('Paper') - search through a list, returns the index
-# game.print(game[1:5:2]) - slice of a list, works like range
-# game.append('Computer') - add an item at the end of a list
-# game.insert(0, 'Music') - add an item at a particular index
-# game.remove('Paper') - remove an item
-# game.pop(3) - returns the removed item
-# del game[3] - removes an item by index or by slice
-# print(', '.join(game)) - join to a list using string function join()
-# print(len(game)) - length of a list
+# animals.items() - set of key value pairs
+# animals.keys() - set of just the keys
+# animals.values() - set of just the values
+# print('lions' in animals) - search through, returns True or False
+# animals.get('godzilla') - when you are not sure the key exists, if not found returns None
 
 def main():
-  game = [ 'Rock', 'Paper', 'Scissors','Lizard', 'Spock' ]
-  print(len(game))
-  print_list(game)
+  animals_one = dict(kitten = 'meow', puppy = 'ruff', lion = 'grr') # using dictionary constructor
+  animals = { 'kitten': 'meow', 'puppy': 'ruff!', 'lion': 'grrr',
+      'giraffe': 'I am a giraffe!', 'dragon': 'rawr' }
+  print('found!' if 'lion' in animals else 'not found!')
+  # print_dict(animals_one)
 
-def print_list(o):
-  for i in o: print(i, end = ' ', flush = True)
-  print()
+def print_dict(o):
+    for k,v in o.items(): print(f'{k}: {v}')
 
 if __name__ == '__main__': main()
