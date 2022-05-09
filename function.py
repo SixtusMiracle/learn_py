@@ -1,11 +1,11 @@
 def main():
-    # All functions return a value
-    # if there's no return statement it returns None
-    x = kitten()
-    print(f'{x} is returned')
+    soundsList = ('meow', 'meeeh', 'mooh')
+    kitten(*soundsList)
 
-def kitten():
-    print('Meow!')
-    return 1
+def kitten(*args):
+    if len(args):
+        for sound in args:
+            print(sound)
+    else: print('Meow!')
 
 if __name__ == '__main__': main()
