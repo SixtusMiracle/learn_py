@@ -1,17 +1,17 @@
-# animals.items() - set of key value pairs
-# animals.keys() - set of just the keys
-# animals.values() - set of just the values
-# print('lions' in animals) - search through, returns True or False
-# animals.get('godzilla') - when you are not sure the key exists, if not found returns None
+# sorted(a) - sort a set
+# a - b members in set a that are not in b
+# a | b members in set a or b
+# a ^ b members in a or b but not both
+# a & b members that are in both
 
 def main():
-  animals_one = dict(kitten = 'meow', puppy = 'ruff', lion = 'grr') # using dictionary constructor
-  animals = { 'kitten': 'meow', 'puppy': 'ruff!', 'lion': 'grrr',
-      'giraffe': 'I am a giraffe!', 'dragon': 'rawr' }
-  print('found!' if 'lion' in animals else 'not found!')
-  # print_dict(animals_one)
+    a = set("We're gonna need a bigger boat.")
+    b = set("I'm sorry, Dave. I'm afraid I can't do that.")
+    print_set(a | b)
 
-def print_dict(o):
-    for k,v in o.items(): print(f'{k}: {v}')
+def print_set(o):
+    print('{', end = '')
+    for x in o: print(x, end = '')
+    print('}')
 
 if __name__ == '__main__': main()
